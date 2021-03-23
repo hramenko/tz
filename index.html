@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="js/glide.core.min.css">
+	<link rel="stylesheet" href="js/glide.theme.min.css">  
+	<link rel="stylesheet" href="css/main.css">  
+  <script src="js/glide.min.js"></script>  
+<style>
+
+</style>
+</head>
+<body>
+	<section class="welcome-block">		
+		<header>
+			<h1>Здравствуй, <b>дорогая моя<br> посетительница!</b></h1>
+			<blockquote><h2>Я хочу познакомить тебя <br>с нашей студией <b>лазерной<br>эпиляции</b></h2><br>
+			Меня зовут Светлана, я основатель студии.<br>
+			Уже 40 лет как мы занимаемся развитием<br>
+			лазерной эпиляции в городе Пермь, а так же<br>
+			оказываем услуги LPG массажа. 			
+			</blockquote>
+			<a class="button" href="#"><span>Получить скидку 50%</span></a>	
+		</header>
+		<img src="img/studio-administrator.png">
+	</section>
+
+	<section class="slider-block">
+	<header>
+		<h1>Познакомьтесь с, <b>нашей студией</b><br>и как проходят процедуры</h1>
+	</header>
+	<figure>
+		<div class="glide">
+			<div class="glide__track" data-glide-el="track">
+				<ul class="glide__slides">
+					<li class="glide__slide"><img src="img/slider.jpg"></li>
+					<li class="glide__slide"><img src="img/slider.jpg"></li>
+					<li class="glide__slide"><img src="img/slider.jpg"></li>
+					<li class="glide__slide"><img src="img/slider.jpg"></li>
+					<li class="glide__slide"><img src="img/slider.jpg"></li>
+					<li class="glide__slide"><img src="img/slider.jpg"></li>															
+				</ul>
+			</div>
+			<div class="glide__arrows" data-glide-el="controls">
+				<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+				<button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+			</div>
+			<div class="glide__bullets" data-glide-el="controls[nav]">
+				<button class="glide__bullet" data-glide-dir="=0"></button>
+				<button class="glide__bullet" data-glide-dir="=1"></button>
+				<button class="glide__bullet" data-glide-dir="=2"></button>
+				<button class="glide__bullet" data-glide-dir="=3"></button>
+				<button class="glide__bullet" data-glide-dir="=4"></button>								
+				<button class="glide__bullet" data-glide-dir="=5"></button>												
+			</div>  
+		</div>		
+	</figure>
+	</section>
+	<section class="video-block">
+	<header>
+		<h1>Безболезненная процедура</h1>
+		<h2>Клиенты даже засыпают в кресле</h2>
+		<h3>Мастера используют новейшее оборудование</h3>
+	</header>
+	<figure>	
+		<video controls preload="auto" src="laser.mp4" poster="img/epil-video.jpg">Видео эпиляции</video>
+	</figure>
+	</section>
+<script>
+new Glide('.glide').mount({
+type: 'carousel',
+perView: 3,
+peek: 300,
+perTouch: 1,
+startAt: 0,
+focusAt: 'center'
+});
+</script>	
+</body>
+</html>
