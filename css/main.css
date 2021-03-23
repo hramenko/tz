@@ -1,0 +1,106 @@
+@font-face {
+      font-family: "Gilroy Regular";
+      src: url("../fonts/gilroy-regular.ttf");
+}
+* {box-sizing: border-box; margin: 0;}
+html {
+    font-family: "Gilroy Regular", "Open Sans", sans-serif;
+    font-size: 100%;
+    text-align: left;
+}
+
+h1,h2,h3,h4{font-family: "Gilroy Regular"; font-weight: normal;}
+h1{font-size: 3rem; line-height: 4.2rem; color: #282222;}
+h2{font-size: 2rem; line-height: 3rem; color: #3c4144;}
+h3{font-size: 1rem; line-height: 2rem; color: #3c4144;}
+
+section{width: 100%; padding: 0px; margin: 0 auto}
+figure{padding: 2em; width: 100%;}
+video{border-radius: .4em;}
+
+section.welcome-block{	
+	display: grid;	
+	grid-template-columns: 48% 50%;
+	background: linear-gradient(180deg, #bce0ea 0%, #bfeffc 100%);
+}
+.welcome-block header{
+	padding: 4rem;
+    grid-column: 2;
+    place-self: start;
+}
+.welcome-block header h1{
+padding-bottom: 1em;
+}
+
+.welcome-block header h1{text-align: left; }
+.welcome-block header h2{color: #3c4144;}
+.welcome-block blockquote{
+	padding: 0px 0px 4rem 120px;
+	background: url("../img/line.gif") 0px 1rem no-repeat;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	color: #3c4144;
+}
+.welcome-block img{
+	grid-column: 1;
+	grid-row: 1;
+	place-self: end;
+}
+
+
+.welcome-block .button{margin-left: 120px}
+.button{
+	display: inline-block;
+	background: linear-gradient(180deg, #66CBF1 0%, #51B1D3 100%);	
+	border-radius: 18px / 50%;
+	box-shadow: 0px 4px 0px 0px #2D7B98;
+	padding: 2rem 80px 2rem 80px; 
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+.button:hover{
+	background: linear-gradient(180deg, #54c6ec 0%, #49aecf 100%);	
+}
+
+section.slider-block header, section.video-block{
+	text-align: center;
+}
+section.slider-block{
+	padding: 0px 2rem 0px 2rem;
+}
+
+.glide {height: 70vh;}
+.glide__slides{text-align: center;}
+
+.glide__slide{height: 70vh;}
+li.glide__slide img{height: 70vh;}
+
+.glide__arrow {
+   padding: 2.5rem;
+   background-color: transparent;
+   border-radius: 50%;
+   border: none;
+   background: linear-gradient(180deg, #4fc5f1 0%, #64b8d6 100%);
+}
+.glide__arrow--right{
+    right: -2.6rem;
+}
+.glide__arrow--left{
+    left: -2.6rem;
+}
+ 
+.glide__bullets{
+	bottom: unset;
+}
+.glide__bullet {
+  background: #d4edf7;
+  border: 0px;
+  width: 12px;
+  height: 12px;
+}
+.glide__bullet--active, .glide__bullet:hover, .glide__bullet:focus{
+	background: #4bc0ec;
+	border: 0px;
+}
